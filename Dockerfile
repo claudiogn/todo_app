@@ -1,4 +1,5 @@
 FROM ruby:3.0.0
+ENV BUNDLER_VERSION=2.2.3
 RUN apt-get update -qq && apt-get install -y nodejs postgresql-client
 WORKDIR /todo_app
 COPY Gemfile /todo_app/Gemfile
